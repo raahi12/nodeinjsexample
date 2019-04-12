@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="newProducts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+    <label>Name:</label>
+    <input type="text" id="name" placeholder="Name">
+    <br>
+    <label>Price:</label>
+    <input type="number" id="price" placeholder="Price">
+    <br>
+    <label>Quantity:</label>
+    <input type="number" id="qty" placeholder="Quantity">
+    <br>
+    <label>Vendor:</label>
+    <select id="Vendor">
+
+    </select>
+    <br>
+    <button id="add">Add</button>
+       <table class="table table-hover table-bordered">
+           <thead>
+               <tr>
+                   <td>NAME</td>
+                   <td>PRICE</td>
+                   <td>Quantity</td>
+                   <td>Vendor Name</td>
+                   <td>OPTION</td>
+               </tr>
+           </thead>
+           <tbody id="Products">
+
+           </tbody>
+       </table>
+       </div>
+</body>
+</html>
