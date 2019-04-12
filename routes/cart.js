@@ -14,14 +14,15 @@ route.post('/cart/add',async (req,res)=>{
         }
     }).then((items)=>{
             console.log("sdsadsadsad")
-            cartItems.update(
+            
+            items[0].increment(
                 {
-                    qty:parseInt(items[0].qty)+1
+                    qty: 1
                 },
                 {
                     where:{
                         userId:req.body.userId,
-                        productId:req.body.productId
+                       productId:req.body.productId
                     }
                 })
         
