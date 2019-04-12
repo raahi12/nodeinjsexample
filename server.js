@@ -17,5 +17,6 @@ srv.use('/',cart);
 srv.use((req,res)=>{res.send(`<h1>404 Page Not Found</h1> <h2>The page does not exist</h2>`)});
 
 db.sync().then(()=>{
-    srv.listen(4200);
+    const port=process.env.PORT||4200
+    srv.listen(port);
 })
